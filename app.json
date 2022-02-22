@@ -1,9 +1,9 @@
 {
-  "name": "⋆ 𝘼𝙮𝙞𝙞𝙣-𝙐𝙨𝙚𝙧𝙗𝙤𝙩 ⋆",
-  "description": "[Ayiin-Userbot] Userbot Hanya Untuk Bersenang - Senang",
+  "name": "⋆ Alzet-Userbot ⋆",
+  "description": "[Alzet-Userbot] Userbot Hanya Untuk Bersenang - Senang",
   "logo": "https://telegra.ph/file/c6a0aef41355af5a018c6.jpg",
   "keywords": ["telegram", "userbot", "man-userbot", "modular", "python"],
-  "repository": "https://github.com/AyiinXd/Ayiin-Userbot",
+  "repository": "https://github.com/AlzetId/Alzet-Userbot",
   "stack": "container",
   "env": {
     "API_KEY": {
