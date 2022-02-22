@@ -34,7 +34,7 @@ async def ayiin_userbot_on():
             if BOTLOG_CHATID != 0:
                 await bot.send_message(
                     BOTLOG_CHATID,
-                    f"✨ **Ayiin-Userbot Berhasil Di Aktifkan**\n━━\n➠ **Userbot Version -** `{version}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
+                    f"✨ **Alzet-Userbot Berhasil Di Aktifkan**\n━━\n➠ **Userbot Version -** `{version}@{branch}`\n➠ **Ketik** `{cmd}alive` **untuk Mengecheck Bot**\n━━",
                 )
     except BaseException:
         pass
