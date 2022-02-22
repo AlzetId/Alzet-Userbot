@@ -14,7 +14,7 @@ from userbot import CMD_HANDLER as cmd
 from userbot import AYIIN2, AYIIN3, AYIIN4, AYIIN5, bot, branch
 
 MSG_ON = """
-✨ **Ayiin-Userbot Berhasil Di Aktifkan**
+✨ **Alzet-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}@{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
