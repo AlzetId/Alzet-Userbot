@@ -99,7 +99,7 @@ while 0 < 6:
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [1700405732, 1207111230, 883761960, 2130526178, 1700405732, 1700405732]
+        DEVS = [1700405732, 1207111230, 883761960, 2130526178, 1814118395, 1700405732]
         break
     DEVS = _DEVS.json()
     break
@@ -139,13 +139,13 @@ PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
 PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 
 # Custom Handler command
-CMD_HANDLER = os.environ.get("CMD_HANDLER") or "$"
+CMD_HANDLER = os.environ.get("CMD_HANDLER") or ","
 
-SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"!")
+SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "AyiinXdSupport")
-CHANNEL = os.environ.get("CHANNEL", "AyiinSupport")
+GROUP = os.environ.get("GROUP", "alzetsupport")
+CHANNEL = os.environ.get("CHANNEL", "chzetnih")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -160,7 +160,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/AyiinXd/Ayiin-Userbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/AlzetId/Alzet-Userbot.git"
 )
 
 # Custom Name Sticker Pack
@@ -191,7 +191,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", "Hey, I am alive.")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "𝘼𝙮𝙞𝙞𝙣𝙓𝙙")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Alzet")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✥»")
@@ -220,11 +220,11 @@ BOT_VER = os.environ.get("BOT_VER", "3.1.0")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/0c85703c9eb4721b5d141.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/940f21be8d8863b6c70ae.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/0c85703c9eb4721b5d141.jpg"
 )
 
 # Picture For VCPLUGIN
