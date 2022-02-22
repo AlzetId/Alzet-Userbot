@@ -28,7 +28,7 @@ async def help(event):
         for i in CMD_HELP:
             string += "`" + str(i)
             string += f"`\t\t\t{ICON_HELP}\t\t\t"
-        await event.edit("🗿")
+        await event.edit("😎")
         sleep(3)
         await edit_or_reply(
             event,
@@ -36,5 +36,5 @@ async def help(event):
             f"**߷ 𝙹𝚄𝙼𝙻𝙰𝙷** `{len(modules)}` **Modules**\n"
             f"**♕︎ 𝙾𝚆𝙽𝙴𝚁:** [{user.first_name}](tg://user?id={user.id})\n\n"
             f"{ICON_HELP}   {string}"
-            f"\n\n☞  **𝚂𝚄𝙿𝙿𝙾𝚁𝚃** : @AyiinXdSupport\n☞  **𝙽𝙾𝚃𝙴𝚂** :  {cmd}help yinsubot **Untuk Melihat Module Lainnya**"
+            f"\n\n☞  **𝚂𝚄𝙿𝙿𝙾𝚁𝚃** : @alzetsupport\n☞  **𝙽𝙾𝚃𝙴𝚂** :  {cmd}help yinsubot **Untuk Melihat Module Lainnya**"
         )
