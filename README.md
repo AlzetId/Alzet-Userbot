@@ -1,4 +1,4 @@
- <h1 align="center"><img src="./userbot/resources/Kenpurple.gif" width="35px"> 𝘼𝙮𝙞𝙞𝙣 𝙐𝙨𝙚𝙧𝙗𝙤𝙩 <img src="./userbot/resources/Kenpurple.gif" width="35px"></h1>
+ <h1 align="center"><img src="./userbot/resources/Kenpurple.gif" width="35px"> Alzet Userbot <img src="./userbot/resources/Kenpurple.gif" width="35px"></h1>
 
 <a href="https://github.com/AyiinXd/Ayiin-Userbot/commits"> <img src="https://img.shields.io/github/last-commit/AyiinXd/Ayiin-Userbot?color=red&logo=github&logoColor=blue&style=for-the-badge" /></a>
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/AyiinXd/Ayiin-Userbot)
@@ -9,7 +9,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/940f21be8d8863b6c70ae.jpg">
+  <img src="https://telegra.ph/file/0c85703c9eb4721b5d141.jpg">
 </p>
 
 <img src="./userbot/resources/Kenpurple.gif" width="20px"> `Userbot yang mempunyai berbagai module dan banyak perintah yang keren, gas deploy bang😁 kalo udah make jadi keren`
@@ -24,7 +24,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 ## ❤️Follow Me:
 <p align="left">
-<a href="https://github.com/AyiinXd"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
+<a href="https://github.com/AlzetId"><img src="https://img.shields.io/badge/GitHub-Follow%20on%20GitHub-inactive.svg?logo=github"></a>
 </p>
 </p>
 <p align="left">
@@ -36,7 +36,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 <h3 align="center">Klik Tombol di Bawah ini untuk Deploy di Heroku :</h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/AyiinXd/Deploy-Ayiin"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=flat&logo=heroku" width="250" height="40.00" /></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/AlzetId/Alzet-Userbot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blue?style=flat&logo=heroku" width="250" height="40.00" /></a></p>
 
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=QXlpaW5YZC9BeWlpbi1Vc2VyYm90IEF5aWluLVVzZXJib3Q"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
