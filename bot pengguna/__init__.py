@@ -99,7 +99,7 @@ while 0 < 6:
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [1700405732, 1207111230, 883761960, 2130526178, 1814118395, 1700405732]
+        DEVS = [1700405732, 1814118395, 1207111230, 883761960, 2130526178, 1814118395, 1700405732]
         break
     DEVS = _DEVS.json()
     break
@@ -136,7 +136,7 @@ NO_LOAD = os.environ.get("NO_LOAD", "").split()
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
-PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
+PM_LIMIT = int(os.environ.get("PM_LIMIT", 4))
 
 # Custom Handler command
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or ","
@@ -145,7 +145,7 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
 GROUP = os.environ.get("GROUP", "alzetsupport")
-CHANNEL = os.environ.get("CHANNEL", "chzetnih")
+CHANNEL = os.environ.get("CHANNEL", "dplyubot")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -164,7 +164,7 @@ UPSTREAM_REPO_URL = os.environ.get(
 )
 
 # Custom Name Sticker Pack
-S_PACK_NAME = os.environ.get("S_PACK_NAME", "Sticker Pack By @AyiinXdSupport")
+S_PACK_NAME = os.environ.get("S_PACK_NAME", "Sticker Pack By @AlzetSupport")
 
 # SQL Database URI
 DB_URI = os.environ.get("DATABASE_URL", None)
@@ -274,7 +274,7 @@ BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 # Jangan di hapus Nanti ERROR
 while 0 < 6:
     _BLACKLIST = get(
-        "https://raw.githubusercontent.com/mrismanaziz/Reforestation/master/manblacklist.json"
+        "https://raw.githubusercontent.com/AyiinXd/Reforestation/master/ayiinblacklist.json"
     )
     if _BLACKLIST.status_code != 200:
         if 0 != 5:
@@ -376,7 +376,7 @@ async def check_botlog_chatid() -> None:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**⍟ Ayiin-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**⍟ Alzet-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**⍟ Telethon:** {version.__version__}\n"
         f"**⍟ Python:** {python_version()}\n"
         f"**⍟ User:** {DEFAULTUSER}"
@@ -551,26 +551,26 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@AyiinXdSupport"):
+            if event.query.user_id == uid and query.startswith("@AlzetSupport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**᯽ Ayiin-Userbot Inline Menu ᯽**\n\n✓ **Owner** [{user.first_name}](tg://user?id={user.id})\nJumlah** `{len(dugmeler)}` Modules",
+                    text=f"**᯽ Alzet-Userbot Inline Menu ᯽**\n\n✓ **Owner** [{user.first_name}](tg://user?id={user.id})\nJumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Ayiin - Userbot",
-                    url="https://t.me/AyiinXdSupport",
+                    description="Repository Alzet - Userbot",
+                    url="https://t.me/AlzetSupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Ayiin - UserBot**\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸\n👑 **Owner :** [𝘼𝙮𝙞𝙞𝙣𝙓𝙙](https://t.me/AyiinXd)\n👉 **Support :** @AyiinXdSupport\n♨️ **Repository :** [𝘼𝙮𝙞𝙞𝙣-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/AyiinXd/Ayiin-Userbot)\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸",
+                    text="**Alzet - UserBot**\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸\n👑 **Owner :** [𝘼𝙡𝙯𝙚𝙩](https://t.me/xyzetnih)\n👉 **Support :** @AlzetSupport\n♨️ **Repository :** [𝘼𝙡𝙯𝙚𝙩-𝙐𝙨𝙚𝙧𝙗𝙤𝙩](https://github.com/AlzetId/Alzet-Userbot)\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸",
                     buttons=[
                         [
-                            custom.Button.url("-ɢʀᴏᴜᴘ", "https://t.me/AyiinXdSupport"),
+                            custom.Button.url("-ɢʀᴏᴜᴘ", "https://t.me/AlzetSupport"),
                             custom.Button.url(
-                                "-ʀᴇᴘᴏ", "https://github.com/AyiinXd/Ayiin-Userbot"
+                                "-ʀᴇᴘᴏ", "https://github.com/AlzetId/Alzet-Userbot"
                             ),
                         ],
                     ],
@@ -610,16 +610,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="᯽ Ayiin-Userbot ᯽",
-                    description="Ayiin - UserBot | Telethon",
-                    url="https://t.me/AyiinXdSupport",
+                    title="᯽ Alzet-Userbot ᯽",
+                    description="Alzet - UserBot | Telethon",
+                    url="https://t.me/AlzetSupport",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Ayiin - UserBot**\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸\n~ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n~ **Assistant:** {tgbotusername}\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸\n**Support:** @AyiinXdSupport\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸",
+                    text=f"**Alzet - UserBot**\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸\n~ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n~ **Assistant:** {tgbotusername}\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸\n**Support:** @AlzetSupport\n🔸🔸🔸🔸🔸🔸🔸🔸🔸🔸",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/AyiinXdSupport"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/AlzetSupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/AyiinXd/Ayiin-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/AlzetId/Alzet-Userbot"
                             ),
                         ],
                     ],
@@ -634,7 +634,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**᯽ Ayiin-Userbot Inline Menu ᯽**\n\n👑 **Owner** [{user.first_name}](tg://user?id={user.id})\n👉 **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**᯽ Alzet-Userbot Inline Menu ᯽**\n\n👑 **Owner** [{user.first_name}](tg://user?id={user.id})\n👉 **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
@@ -698,7 +698,7 @@ with bot:
                         .replace("`", "")
                         .replace("**", "")[:150]
                         + "..."
-                        + "\n\nBaca Teks Berikutnya Ketik $help "
+                        + "\n\nBaca Teks Berikutnya Ketik ,help "
                         + modul_name
                         + " "
                     )
