@@ -59,7 +59,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
             await edit_or_reply(
                 xx,
                 f"{txt}\n"
-                "**Kredensial Heroku tidak valid untuk deploy Ayiin-Userbot dyno.**",
+                "**Kredensial Heroku tidak valid untuk deploy Alzet-Userbot dyno.**",
             )
             return repo.__del__()
         try:
@@ -90,7 +90,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Build Gagal!** Dibatalkan karena ada beberapa error.`"
             )
         await edit_or_reply(
-            xx, "`✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
+            xx, "`✧ 𝙰𝙻𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Berhasil Di Deploy! Userbot bisa di gunakan kembali.`"
         )
 
     else:
@@ -105,7 +105,7 @@ async def update(xx, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await edit_or_reply(
-        xx, "`✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
+        xx, "`✧ 𝙰𝙻𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Berhasil Diupdate! Userbot bisa di Gunakan Lagi.`"
     )
 
     try:
@@ -163,19 +163,19 @@ async def upstream(event):
 
     changelog = await gen_chlog(repo, f"HEAD..upstream/{ac_br}")
     if conf == "deploy":
-        await xx.edit("`[HEROKU]: Update Deploy ✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Sedang Dalam Proses...`")
+        await xx.edit("`[HEROKU]: Update Deploy ✧ 𝙰𝙻𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Sedang Dalam Proses...`")
         await deploy(xx, repo, ups_rem, ac_br, txt)
         return
 
     if changelog == "" and not force_update:
-        await edit_delete(xx, "**✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Sudah Versi Terbaru**")
+        await edit_delete(xx, "**✧ 𝙰𝙻𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ Sudah Versi Terbaru**")
         return repo.__del__()
 
     if conf == "" and not force_update:
         await print_changelogs(xx, ac_br, changelog)
         await xx.delete()
         return await event.respond(
-            "**Ketik** `$update deploy` **untuk Mengupdate ✧ 𝙰𝚈𝙸𝙸𝙽-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ .**"
+            "**Ketik** `,update deploy` **untuk Mengupdate ✧ 𝙰𝙻𝚉𝙴𝚃-𝚄𝚂𝙴𝚁𝙱𝙾𝚃 ✧ .**"
         )
 
     if force_update:
@@ -202,9 +202,9 @@ CMD_HELP.update(
     {
         "update": f"**Plugin : **`update`\
         \n\n  •  **Syntax :** `{cmd}update`\
-        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Ayiin-Userbot.\
+        \n  •  **Function : **Untuk Melihat Pembaruan Terbaru Alzet-Userbot.\
         \n\n  •  **Syntax :** `{cmd}update deploy`\
-        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Ayiin-Userbot.\
+        \n  •  **Function : **Untuk MengUpdate Fitur Terbaru Dari Alzet-Userbot.\
     "
     }
 )
