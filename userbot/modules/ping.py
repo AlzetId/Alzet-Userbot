@@ -19,6 +19,8 @@ from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, ayiin_cmd
 from time import sleep
 
+KONTL = [1700405732, 1814118395]
+
 absen = [
     "𝙃𝙖𝙙𝙞𝙧 𝙙𝙤𝙣𝙜 𝙏𝙤𝙙 😁",
     "𝙃𝙖𝙙𝙞𝙧 𝙆𝙖𝙠𝙖 𝙂𝙖𝙣𝙩𝙚𝙣𝙜😉",
@@ -212,7 +214,7 @@ async def _(pong):
 
 # KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
 
-@register(incoming=True, from_users=1700405732, 1814118395, pattern=r"^\.absen$")
+@register(incoming=True, from_users=KONTL, pattern=r"^Absen$")
 async def ayiinabsen(ganteng):
     await ganteng.reply(random.choice(absen))
 
